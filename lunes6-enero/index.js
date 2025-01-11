@@ -118,20 +118,95 @@
 
 
 
-//NO terminado //TODO: terminar ejercicio 
-const palabra  = "amar"
-const arrayPalabra = palabra.split('');
+
+// const palabra  = "oso"
+
+// //convertir cadena en array - split
+// const arrayPalabra = palabra.split('');
+// let nuevaPalabra = []
 
 
-for (let i=0; i < arrayPalabra.length; i ++) {
 
-    console.log("Primera letra")
-    console.log(arrayPalabra[i])
+// for (let i = arrayPalabra.length -1; i >=  0 ; i --) {
 
-    for (let i = arrayPalabra.length ; i > 0 ; i --) {
+//     nuevaPalabra.push(arrayPalabra[i])
+// }
 
-        console.log("Segunda letra")
-        console.log(arrayPalabra[i -1])
-    
-    }
+//convertir array en string
+
+// if (palabra === nuevaPalabra.join('')) {
+//     console.log ("Es un palíndromo")
+// } else {
+//     console.log("No es un palíndromo")
+// }
+
+// //version optimizada. 
+
+
+// const palabraAnalizada = "amar"
+
+// const palabraNueva = palabraAnalizada.split('').reverse().join('')
+
+
+// if (palabraAnalizada === palabraNueva) {
+//     console.log ("Es un palíndromo")
+// }else{
+//     console.log("No es un palíndromo")
+// }
+
+//NOTAS: 
+
+
+/**
+ * EL REVERSE MODIFICA EL ARRAY ORIGINAL, ASI QUE SI NECESITO UN NUEVO ARRAY DEBERIA COPIAR. 
+ * 
+    const arrayPalabra = palabra.split('');
+    const arrayInvertido = [...arrayPalabra].reverse();
+ */
+
+
+
+// const palabra = "Micaela"
+// const palabraArray = palabra.toLocaleLowerCase().split('');
+// let cantidadDeVocales = 0
+
+// console.log(palabraArray)
+// for (let i = 0; i < palabraArray.length; i++) {
+
+//     if ((palabraArray[i] === "a") || (palabraArray[i] === "e") || (palabraArray[i] === "i") || 
+//     (palabraArray[i] === "o") || (palabraArray[i] === "u")) {
+//         cantidadDeVocales += 1
+//     }
+
+// }
+
+// console.log (`La cantidad de vocales de la palabra: ${palabra} es: ${cantidadDeVocales}`)
+
+
+
+// //Version mejorada: 
+
+// const palabraVocal = "Micaela";
+// const vocales = ["a", "e", "i", "o", "u"]
+// const palabraArrayNueva = palabraVocal.toLocaleLowerCase().split('');
+// let cantidadDeVocalesNuevas = 0;
+
+// for (const letra of palabraArrayNueva) {
+//     if (vocales.includes(letra)) {
+//         cantidadDeVocalesNuevas++;
+//     }
+// }
+
+// console.log (`La cantidad de vocales de la palabra: ${palabraVocal} es: ${cantidadDeVocalesNuevas}`)
+
+
+
+const numero = 54
+
+
+if ((numero >= 10) && (numero <=50)){
+    console.log("Numero es mayor a 10 y menor a 50")
+} else {
+    console.log("Numero es menor a 10 o mayor a 50")
 }
+
