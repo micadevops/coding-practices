@@ -1,4 +1,4 @@
-// //EJERCICIO 1
+// //EJERCICIO 1 - Crea una función que reciba dos números y devuelva su suma.
 // function sumar (numero1, numero2){
 //     return numero1 + numero2
 // }
@@ -8,7 +8,8 @@
 // console.log(resultado)
 
 
-// //EJERCICIO 2
+// //EJERCICIO 2 - Escribe un programa que determine si un número es par o impar.
+
 
 // function esPar (numero) {
 
@@ -31,7 +32,8 @@
 // }
 
 
-// //EJERCICIO 3
+// //EJERCICIO 3 - Usa un bucle for para imprimir los números del 1 al 10 en la consola.
+
 
 
 // function mostrarNumeros () {
@@ -45,6 +47,9 @@
 
 
 // mostrarNumeros()
+
+
+//EJERCICIO 4: Escribe una función que tome una cadena y la devuelva al revés.
 
 
 // function cadenaReves (texto) {
@@ -67,25 +72,7 @@
 
 
 
-
-// numeros[0] == 1
-//numeroNuevo == 0 
-
-// numeroMasGrande == 1
-
-// // numeros[1] == 10
-// numeroMasGrane == 1
-
-
-// numeroMasGrande == 10
-
-
-// // numeros[2] == 2
-// numeroMasGrande == 10
-
-// let numeroMasGrande
-
-
+//EJERCICIO 5: Crea un programa que encuentre el número más grande en un array.
 
 // function numeroMasGrande(){
 
@@ -104,9 +91,11 @@
 // }
 
 
-// const resultado = numeroMasGrande()
-// console.log(resultado)
+// const resultadoNumeroMasGrande = numeroMasGrande()
+// console.log(resultadoNumeroMasGrande)
 
+
+//EJERCICIO 6: Usa un bucle while para imprimir los números del 10 al 1.
 
 // let numeroMaximo = 10;
 
@@ -117,6 +106,7 @@
 // }
 
 
+//EJERCICIO 7: Crea una función que verifique si una palabra es un palíndromo.
 
 
 // const palabra  = "oso"
@@ -132,7 +122,7 @@
 //     nuevaPalabra.push(arrayPalabra[i])
 // }
 
-//convertir array en string
+////convertir array en string
 
 // if (palabra === nuevaPalabra.join('')) {
 //     console.log ("Es un palíndromo")
@@ -165,6 +155,7 @@
  */
 
 
+//EJERCICIO 8: Escribe un programa que cuente la cantidad de vocales en una cadena.
 
 // const palabra = "Micaela"
 // const palabraArray = palabra.toLocaleLowerCase().split('');
@@ -201,12 +192,55 @@
 
 
 
-const numero = 54
+//EJERCIO 9: Usa if...else para determinar si un número está en un rango dado (por ejemplo, entre 10 y 50).
+
+// const numero = 54
 
 
-if ((numero >= 10) && (numero <=50)){
-    console.log("Numero es mayor a 10 y menor a 50")
-} else {
-    console.log("Numero es menor a 10 o mayor a 50")
+// if ((numero >= 10) && (numero <=50)){
+//     console.log("Numero es mayor a 10 y menor a 50")
+// } else {
+//     console.log("Numero es menor a 10 o mayor a 50")
+// }
+
+
+//EJERCICIO 10: Escribe una función que devuelva el factorial de un número.
+
+// let numeroFactorial = 10
+// let resultado = 1;
+
+// for (let i = numeroFactorial - 1; i>0; i--) {
+
+//     resultado *= i
+// } 
+
+// console.log(resultado)
+
+
+//EJERCICIO 11: Crea un programa que ordene un array de números de menor a mayor (sin usar métodos predefinidos).
+
+
+//TODO: continuar con este ejercicio 
+
+const arrayDeNumeros = [1, 33, 5, 6, 9]
+let arrayOrdenando = []
+for (let i=0; i < arrayDeNumeros.length; i++) {
+
+
+    //arrayDeNumeros [0] == 1
+    //arrayOrdenando [0] == 0
+    //...
+
+    if (arrayDeNumeros[i] > arrayOrdenando[i]) {
+        console.log(arrayDeNumeros[i])
+        console.log(arrayOrdenando[i])
+
+        arrayOrdenando.push(arrayDeNumeros[i]);
+    }else{
+        arrayOrdenando.unshift(arrayDeNumeros[i])
+    }
+
+
 }
 
+console.log(arrayOrdenando)
